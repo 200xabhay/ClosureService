@@ -1,11 +1,13 @@
 ﻿using ClosureServices.Application.DTO;
 using ClosureServices.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ClosureServices.API.Controllers
 {
     [Route("api/v1/[controller]")]
+    [Authorize]
     [ApiController]
     public class ForClosureController : ControllerBase
     {
